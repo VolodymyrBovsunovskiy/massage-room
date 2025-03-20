@@ -451,3 +451,22 @@ body {
   background: #4cae4c;
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .service-card {
+    width: 100%;
+    /* Щоб картки займали всю доступну ширину */
+    max-width: 90%;
+    /* Або встановити обмеження, щоб виглядало красиво */
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
