@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід до адмін-панелі</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+
+    <section class="login-container">
+        <h1>Вхід в адмін-панель</h1>
+        <form id="loginForm">
+            <label for="username">Логін:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Увійти</button>
+        </form>
+        <p id="error-message" class="error"></p>
+    </section>
+
+    <script src="scripts/auth.js"></script>
+</body>
+
+</html>

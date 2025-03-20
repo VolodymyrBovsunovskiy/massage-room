@@ -3,11 +3,11 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #f8f9fa, #dfe6e9); /* Легкий градієнт з сірого до блакитного */
+  background: linear-gradient(to right, #f8f9fa, #dfe6e9);
+  /* Легкий градієнт з сірого до блакитного */
   color: #333;
   transition: margin-left 0.3s ease;
 }
-
 
 /* Гамбургер-меню */
 .hamburger {
@@ -148,6 +148,26 @@ h2 {
   margin-top: 10px;
 }
 
+/* Кнопка Детальніше */
+.service-card .details-btn {
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #3498db;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.service-card .details-btn:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
 /* Форма запису */
 form label {
   display: block;
@@ -236,40 +256,26 @@ footer {
     align-items: center;
   }
 }
- /*-анімація кнопки при наведенні-*/
- button {
-   background-color: #5cb85c;
-   color: white;
-   border: none;
-   cursor: pointer;
-   font-weight: bold;
-   transition: all 0.3s ease;
- }
 
- button:hover {
-   background-color: #4cae4c;
-   transform: scale(1.05);
- }
+/* Анімація карток послуг */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
- /*-Анімація карток послуг-*/
- .service-card {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   background: white;
-   padding: 20px;
-   border-radius: 12px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   width: 300px;
-   opacity: 0;
-   transform: translateY(20px);
-   transition: opacity 0.5s ease, transform 0.5s ease;
- }
-
- .service-card.visible {
-   opacity: 1;
-   transform: translateY(0);
- }
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Тіні для основного контенту */
 section {
@@ -432,14 +438,14 @@ body {
   margin-top: 10px;
 }
 
-/* Кнопка запису */
-.service-card .book-btn {
+/* Кнопка Детальніше */
+.service-card .details-btn {
   padding: 12px 20px;
   margin-top: 15px;
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background: #5cb85c;
+  background: #3498db;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -447,8 +453,8 @@ body {
   transition: background 0.3s, transform 0.2s;
 }
 
-.service-card .book-btn:hover {
-  background: #4cae4c;
+.service-card .details-btn:hover {
+  background: #2980b9;
   transform: scale(1.05);
 }
 
@@ -461,12 +467,44 @@ body {
 
   .service-card {
     width: 100%;
-    /* Щоб картки займали всю доступну ширину */
     max-width: 90%;
-    /* Або встановити обмеження, щоб виглядало красиво */
   }
 }
 
-body {
-  overflow-x: hidden;
+.admin-login-btn {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ef14bf;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.admin-login-btn:hover {
+  background: #1a252f;
+}
+
+/* Кнопка Вхід в адмін-панель */
+.admin-login-btn {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px auto;
+  width: 200px;
+  transition: background 0.3s ease-in-out;
+}
+
+.admin-login-btn:hover {
+  background: #1a252f;
 }

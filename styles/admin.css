@@ -1,0 +1,139 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5d8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8e6f55;
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#logoutBtn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: #a93226;
+}
+
+/* Форма додавання послуги */
+.add-service {
+    background: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.add-service h2 {
+    text-align: center;
+}
+
+.add-service input,
+.add-service textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.add-service button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.add-service button:hover {
+    background-color: #2980b9;
+}
+
+/* Список послуг */
+.services-list {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.services-list h2 {
+    font-size: 22px;
+    color: #8e6f55;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+li strong {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+li p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+li button {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+li button:first-of-type {
+    background-color: #f39c12;
+    color: white;
+}
+
+li button:first-of-type:hover {
+    background-color: #e67e22;
+}
+
+li button:last-of-type {
+    background-color: #c0392b;
+    color: white;
+}
+
+li button:last-of-type:hover {
+    background-color: #a93226;
+}
