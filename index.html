@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Масажний кабінет</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+    <!-- Гамбургер-меню -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Бічне меню -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Масажний кабінет</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Послуги</a></li>
+                <li><a href="#booking"><i class="fas fa-calendar-check"></i> Запис</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Основний контент -->
+    <section id="services">
+        <h2>Наші послуги</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="massage-icon.png" alt="Massage">
+                <h3>Розслабляючий масаж</h3>
+                <p>Глибоке розслаблення та відновлення енергії</p>
+                <div class="price">1200 грн</div>
+                <button class="book-btn">Записатись</button>
+            </div>
+        
+            <div class="service-card">
+                <img src="spa-icon.png" alt="Spa">
+                <h3>СПА-процедура</h3>
+                <p>Догляд за тілом та гармонія душі</p>
+                <div class="price">1500 грн</div>
+                <button class="book-btn">Записатись</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="booking">
+        <h2>Запис на масаж</h2>
+        <form>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="service">Послуга:</label>
+            <select id="service">
+                <option>Класичний масаж</option>
+                <option>Релакс-масаж</option>
+            </select>
+
+            <button type="submit">Записатися</button>
+        </form>
+    </section>
+
+    <section id="reviews">
+        <h2>Відгуки</h2>
+        <p>Тут будуть відгуки клієнтів...</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <p>Фото масажного кабінету...</p>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакти</h2>
+        <p>Телефон: +38 (XXX) XXX-XX-XX</p>
+        <p>Адреса: вул. Прикладна, 12</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Масажний кабінет</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+    <script src="script.js"></script>
+    <div class="decorative-circle circle-large"></div>
+    <div class="decorative-circle circle-small"></div>
+
+
+</body>
+
+</html>
